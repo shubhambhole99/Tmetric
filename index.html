@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"></script>
+    <style>
+
+
+        #navbar{
+            /* border: 1px solid red; */
+            width:80%;
+            background-color: rgb(255,240,184);
+            display: flex;
+            align-items: center;
+            margin:auto
+        }
+        /* Navbar Image */
+        #navbar>img{
+            width: 80px;
+            margin-left: 1%;
+            margin-top: 0%;
+        }
+        /* Navbar button */
+        #navbar>div{
+            margin-left: 1%;
+        }
+        #navbar>div>button{
+            cursor:pointer;
+            padding:5px 10px 5px 10px;
+            background-color: rgb(255,240,184);
+            font-weight: bold;
+            border-radius: 4px;
+            border:2px solid rgba(128, 128, 128, 0.551);
+        }
+        /* Center */
+        #navbar>ul{
+            border: 1px solid green;
+        overflow:hidden;
+        margin:auto;
+        /* margin-left:5%; */
+        width: 50%;
+        padding-right: -30%;
+        justify-content: flex-end;
+        text-align: center;
+        }
+        #navbar ul li{
+        display:inline-block;
+      
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        font-size: 100%;
+    /* from website */
+        line-height: 1.5;
+        font-family: PTRootUIMedium,sans-serif;
+        color: #212529;
+        font-weight: 500;
+            }
+        #navbar>ul li:nth-child(1):after,ul li:nth-child(2):after {
+        content: "\2304";
+        color: #212529;  
+        font-weight: bold;
+        transition: all .3s ease;
+        text-decoration: none;
+        background-color: transparent;
+        /* border: 1px solid green; */
+        /* display: inline-block; */
+        /* width: 30%; */
+        margin-bottom: 200%;
+        padding-bottom: 30%;
+        }
+
+        #navbar>a:nth-child(4){
+            color: #212529;
+            font-family: PTRootUIBold,sans-serif;
+            font-weight: 700;
+             
+
+        }
+        #navbar>a:nth-child(5){
+            color: #3070f0;
+            margin-right: 2%;
+            margin-left: 2%;
+            border: 2px solid #3070f0;
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-family: PTRootUIBold,sans-serif;
+            font-weight: 700;
+        }
+        /* top container */
+        /* First Div */
+        #topcontainer{
+            /* border:1px solid red; */
+            width:80%;
+            margin:auto;
+            justify-content: center;
+            display: flex;
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            background-color: rgb(255,240,184);
+        }
+        #topcontainer>div:nth-child(1){
+            /* border:1px solid red; */
+            width:45%;
+        }
+        #topcontainer>div:nth-child(2){
+            /* border:1px solid red; */
+            width:45%;
+        }
+        #topcontainer>div>h1{
+            width: 70%;
+            margin: 0 0 2.1rem;
+        font: bold 3.75rem/1.066 ObjectivityBold,sans-serif;
+        letter-spacing: -1px;
+       
+        
+        }
+        #topcontainer>div>p{
+            font: bold 1.25rem/1.4 PTRootUIBold,sans-serif;
+            
+        }
+        
+        #topcontainer>div>input{
+            /* position: relative; */
+            padding:1.5%;
+            padding-right: 25%;
+            margin-bottom: 5%;
+            margin-left: -0.5%;
+            border:1px solid rgba(128, 128, 128, 0.377)
+        
+       
+        }
+        #topcontainer>div>button{
+            background: #3070f0;
+            padding:2% 10% 2% 10%;
+            border: 0px solid red;
+            border-radius: 4px;
+            color: white;
+            font-family: PTRootUIMedium,sans-serif;
+        
+        }
+        /* font-mail */
+        #topcontainer>div>span:nth-child(3){
+            padding:1.25% 2% 1.4% 2%;
+            
+            
+            border:1px solid rgba(128, 128, 128, 0.377)
+        }
+        #topcontainer>div>span:nth-child(7){
+            padding-left: 20px;
+        
+        color: #4c5157;
+        line-height: 1.2;
+        }
+        #topcontainer>div:nth-child(2){
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+        /* height: 800px; */
+        
+        
+        }
+        #topcontainer>div:nth-child(2)>img{
+            width: 1000px;
+            /* margin-top: 50%; */
+        
+        
+        }
+       
+
+        /* Section 3 (Manage your Team) */
+        #s3f{
+            background-color:#f6f7f8
+        }
+        
+        #s3{
+            /* border: 1px solid red; */
+            width: 80%;
+            margin:auto;
+            display: flex;
+             padding-top: 2%;
+            padding-bottom: 2%;
+            /* margin-bottom: -2%;  */
+            justify-content: center;
+            align-items: flex-start;
+        }
+        #s3>div:nth-child(1){
+            /* border: 1px solid red; */
+            width: 40%;
+            
+            /* margin:auto; */
+        }
+        #s3>div:nth-child(1)>h1{
+            margin: 0 0 2rem;
+    font: bold 3rem/1.125 ObjectivityBold,sans-serif;
+            /* margin:auto; */
+        }
+        #s3>div:nth-child(1)>ul>li{
+            font-size: 1.25rem;
+            line-height: 1.4;
+            /* margin:auto; */
+            font-family: PTRootUIMedium,sans-serif;
+            color: #212529;
+            font-weight: 500;
+        }
+        #s3 button{
+            background: #3070f0;
+            padding:2% 4% 2% 4%;
+            /* border: 0px solid red; */
+            border-radius: 4px;
+            color: white;
+            margin-top:4%;
+            border:3px;
+            font-family: PTRootUIMedium,sans-serif;
+        
+        }
+        #s3>div:nth-child(2){
+            /* border: 1px solid red; */
+            width: 50%;
+            display: flex;
+            justify-content: flex-end; 
+             align-items: center;
+      
+            /* margin:auto; */
+        }
+        #s3>div:nth-child(2)>img{
+            width:800px;
+            
+            
+        }
+        /* Section 4 */
+        #s4f{
+            background-color:white
+        }
+        
+        #s4{
+            /* border: 1px solid red; */
+            width: 80%;
+            margin:auto;
+            display: flex;
+            padding-top: 2%;
+            padding-bottom: 2%;
+           
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        #s4>div:nth-child(2){
+            /* border: 1px solid red; */
+            width: 40%;
+            
+            /* margin:auto; */
+        }
+        #s4>div:nth-child(2)>h1{
+            margin: 0 0 2rem;
+    font: bold 3rem/1.125 ObjectivityBold,sans-serif;
+            /* margin:auto; */
+        }
+        #s4>div:nth-child(2)>ul>li{
+            font-size: 1.25rem;
+            line-height: 1.4;
+            font-family: PTRootUIMedium,sans-serif;
+            color: #212529;
+            font-weight: 500;
+            /* margin:auto; */
+        }
+        #s4 button{
+            background: #3070f0;
+            padding:2% 4% 2% 4%;
+            /* border: 0px solid red; */
+            border-radius: 4px;
+            color: white;
+            margin-top:4%;
+            border:3px;
+            font-family: PTRootUIMedium,sans-serif;
+        
+        }
+        #s4>div:nth-child(1){
+            /* border: 1px solid red; */
+            width: 50%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            /* for keeping image in the end */
+            /* margin-left: -5%; */
+           
+      
+            /* margin:auto; */
+        }
+        #s4>div:nth-child(1)>img{
+            width: 800px;
+            /* border: 1px solid red; */
+            
+            padding: -10%;
+            
+            
+        }
+        
+
+
+        /* @media  all and (min-width:651px) and (max-width:1024px){
+        body{
+            /* background-color: green; */
+        
+    
+        /* @media all and (min-width:320px) and (max-width:650px){
+        body{
+            /* background-color: black;} */
+
+ 
+        
+       
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        
+        <img src="https://static.crozdesk.com/web_app_library/providers/logos/000/009/822/original/tmetric-1612456344-logo.png?1612456344">
+        <div><button>EN</button></div>
+        <ul>
+            <li>Why TMetric</li>
+            <li>Apps & Integration</li>
+            <li>Pricing</li>
+            <li>Support</li>
+            <li>Blog</li>
+        </ul>
+        <a>Log In</a>
+        <a>Sign Up</a>
+            
+        </div>
+   
+    <div id="topcontainer">
+        <div>
+            <h1>Make the best use of your time</h1>
+            <p>TMetric is a smart choice for time tracking to see work in progress and keep team, cost and quality under control</p>
+            <span><i class="fa-solid fa-envelope"></i></i></span>
+            <input placeholder="Enter your Email Address">
+            <br>
+            <button>Get Started
+
+            </button>
+            <span>Fully Functional 30-Day Trial</span>
+        </div>
+       <img src="https://tmetric.com/media/w53hmkzd/img-video-cover.png"
+    </div>
+
+</div>
+<div id="s3f">
+  <div id="s3">
+       
+    <div>
+        <h1>Manage your team <br>effectively</h1>
+        <ul>
+    <li>timekeeping</li>
+    <li>sites and apps monitoring</li>
+    <li>activity tracking</li>
+    <li>screenshots capturing</li>
+    <li>task management</li>
+    <li>50+ integrations</li>
+    <li>work schedule</li>
+</ul>
+<button>Start Free Trial</button>
+</div>
+
+<div>
+    <img src="https://tmetric.com/media/upkh02nn/img-activity-cases.svg"> 
+</div>
+    </div>
+</div>
+<div id="s4f">
+    <div id="s4">
+        <div>
+            <img src="https://tmetric.com/media/hx0j4hno/img-report-cases-svg.svg"> 
+        </div>
+      <div>
+          <h1>Ensure the profitability of your business</h1>
+          <ul>
+      <li>timekeeping</li>
+      <li>sites and apps monitoring</li>
+      <li>activity tracking</li>
+      <li>screenshots capturing</li>
+      <li>task management</li>
+      <li>50+ integrations</li>
+      <li>work schedule</li>
+  </ul>
+  <button>Start Free Trial</button>
+  </div>
+  
+ 
+      </div>
+  </div>
+  <div id="s3f">
+    <div id="s3">
+         
+      <div>
+          <h1>Monitor attendance and time-off requests</h1>
+          <ul>
+      <li>flexible time off policy</li>
+      <li>time off requests management</li>
+      <li>time off calendar</li>
+      <li>pto calculations</li>
+      
+  </ul>
+  <button>Start Free Trial</button>
+  </div>
+  
+  <div>
+      <img src="https://tmetric.com/media/0sapzfi1/time-off-calendar-case.png"> 
+  </div>
+      </div>
+  </div>
+</body>
+
+</html>
