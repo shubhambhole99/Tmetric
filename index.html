@@ -38,7 +38,7 @@
         }
         /* Center */
         #navbar>ul{
-            border: 1px solid green;
+            /* border: 1px solid green; */
         overflow:hidden;
         margin:auto;
         /* margin-left:5%; */
@@ -59,7 +59,7 @@
         color: #212529;
         font-weight: 500;
             }
-        #navbar>ul li:nth-child(1):after,ul li:nth-child(2):after {
+        #navbar>ul li:nth-child(1):after,#navbar>ul li:nth-child(2):after {
         content: "\2304";
         color: #212529;  
         font-weight: bold;
@@ -170,7 +170,7 @@
         
         
         }
-       
+      
 
         /* Section 3 (Manage your Team) */
         #s3f{
@@ -376,14 +376,16 @@
             width:50%;
             text-align:left;
             align-items: flex-start;
+
         }
         #s7>div:nth-child(2){
-            margin:auto
+            margin:auto;
+           
         }
         #s7>div:nth-child(1)>hr{
             
             width:30%;
-            padding-left: 50px
+            margin-right: 80%;
             
         }
         #s7f>h3{
@@ -397,25 +399,44 @@
     font-family: PTRootUIMedium,sans-serif;
     color: #212529;
     font-weight: 500;}
-        #s7>div:nth-child(1)>p:nth-child(3){
+        #s7>div:nth-child(1)>span:nth-child(3){
     font: 700 1rem/1.5 PTRootUIBold,sans-serif;
 }
-#s7>div:nth-child(1)>p:nth-child(3)>a{
+#s7>div:nth-child(1)>a{
                 margin-bottom: 9px;
     font: 700 1rem/1.5 PTRootUIBold,sans-serif;
     color: #3070f0;
     cursor: pointer;
-    margin-left:200px;
+    margin-left:300px;
     
     
 }
-#s7>div:nth-child(1)>p:nth-child(3)>a::after{
+#s7f>div:nth-child(3)>a:hover{
+    color:black;
+    background-color: #e7edfc;;
+
+}
+#s7>div:nth-child(1)>a::after{
     content: "\1F852";
 
 }
-#s7>div:nth-child(1)>p:nth-child(3)>img{
-    margin-top: 10px;
 
+#s7>div:nth-child(1)>img{
+    margin-top: 10px;
+}
+#s7>div:nth-child(2)>img{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+   
+}
+#s7f>div:nth-child(3){
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+}
+#s7f>div:nth-child(3)>a{
+    margin:auto;
+    cursor:pointer;
+    font: 500 1rem/1.5 PTRootUIBold,sans-serif;
 }
 /* Section 8 Read of Review */
 #s8{
@@ -437,7 +458,9 @@
 }
 /* Business trusted */
 #s9{
-   margin-top: 15px;
+   /* margin-top: 15px; */
+   padding-top:30px;
+   padding-bottom:30px;
 background-color:#f6f7f8 ;
 text-align:center
 
@@ -519,6 +542,64 @@ text-align:center
     font:700 1rem/1.5 PTRootUIBold,sans-serif;
 
 }
+ /* Section 2(What makes Tmetric) */
+ #s2f{
+    text-align: center;
+ }
+ #s2f>h2{
+    font: bold 3rem/1.125 ObjectivityBold,sans-serif;
+ }
+ #s2{
+        text-align: center;
+        display:flex;
+        justify-content: center;
+        /* border: 1px solid red; */
+        width: 80%;
+        margin: auto;
+       }
+#s2>div{
+    margin: auto;
+}
+
+#grey{
+    width: 300px;
+    list-style: none;
+    border-radius: 12px;
+    border: 1px solid #e2e7eb;
+    border-radius: 12px;
+    line-height: 1.5;
+    font-family: PTRootUIMedium,sans-serif;
+    color: #212529;
+    font-weight: 500;
+    text-align: left;
+    margin-top:20px
+}
+#grey>span{
+    font: 700 1.25rem/1.4 PTRootUIBold,sans-serif;
+}
+#blue{
+   
+border-color:#3070f0; ;
+background-color: #e7edfc;
+width: 300px;
+    list-style: none;
+    border-radius: 12px;
+    border-radius: 12px;
+    line-height: 1.5;
+    font-family: PTRootUIMedium,sans-serif;
+    color: #212529;
+    font-weight: 500;
+    text-align: left;
+    margin-top:20px
+}
+#ba{
+color:#3070f0;
+font-family:PTRootUIBold,sans-serif;
+}
+#ba::after{
+    content: "\1F852"; 
+}
+
     /* width:10px */
 
 
@@ -570,7 +651,58 @@ text-align:center
         </div>
        <img src="https://tmetric.com/media/w53hmkzd/img-video-cover.png"
     </div>
+</div>
+<div id="s2f">
+    <h2>What makes Tmetric your best business companion</h2>
 
+<div id="s2">
+    
+<!-- What makes Tmetric your best Business Companion -->
+<div>
+<img src="https://tmetric.com/media/e5enfaae/img-advantages.png">
+</div>
+<div>
+    <ul>
+        <li id="grey"  onclick="tt()">
+            <img src="https://tmetric.com/media/2p4n4oyc/icon-timer-blue.svg">
+            <span>Time Tracking</span>
+            <p></p>
+            <a></a>
+        </li>
+        <li id="grey"  onclick="pm()">
+            <img src="https://tmetric.com/media/1niddz51/icon-project-blue.svg">
+            <span> Project Management</span>
+            <p></p>
+            <a></a>
+
+        </li>
+        <li id="grey" onclick="tm()">
+            <img src="	https://tmetric.com/media/2gxihhdu/icon-team-blue.svg">
+            <span>Team Management</span>
+            <p></p>
+            <a></a>
+        </li>
+        <li id="grey" onclick="bi()">
+            <img src="https://tmetric.com/media/s4koycnp/icon-invoice-blue.svg">
+            <span>Blling & invoicing</span>
+            <p></p>
+            <a></a>
+        </li>
+        <li id="grey" onclick="rp()">
+            <img src="https://tmetric.com/media/yoblhiut/icon-reports-blue.svg">
+            <span>Reporting</span>
+            <p></p>
+            <a></a>
+        </li>
+        <li id="grey" onclick="to()">
+            <img src="https://tmetric.com/media/cajpa4uy/icon-time-off-blue.svg">
+            <span>Time Off</span>
+            <p></p>
+            <a></a>
+        </li>
+    </ul>
+</div>
+</div> 
 </div>
 <div id="s3f">
   <div id="s3">
@@ -699,15 +831,24 @@ text-align:center
             We ultimately went with TMetric because it checked a lot of items on our want list. It’s both a desktop and web app, and has an API that we were able to integrate with our business management software. While that was the biggest selling point, we also really like the user interface, the Chrome extension, and built-in integration with Jira.
         </p>
         <hr>
-        <p>BizStream team <a>Read Full Story </a><br>
+        <span>BizStream team </span>
+        <a>Read Full Story </a><br>
         <img src="	https://tmetric.com/media/j2klt5pd/img-rating-5.svg"></p>
-
-        
     </div>
     <div>
         <img src="	https://tmetric.com/media/hznb1sgs/photo-software-developers.png">
     </div>
+   
 
+</div>
+<div>
+    <hr>
+    <a onclick="one()">Software developers</a>
+    <a onclick="two()">Marketers</a>
+    <a onclick="thr()">Designers</a>
+    <a onclick="fou()">Contractors</a>
+    <a onclick="fiv()">Consultants</a>
+    <a onclick="six()">Freelancers</a>
 </div>
 </div>
 <div id="s8">
@@ -770,3 +911,203 @@ text-align:center
 </body>
 
 </html>
+<script>
+// What makes Tmetric your best
+    document.querySelector("#s2")
+//    document.querySelector("#s2>div:nth-child(3)>ul>li:nth-child(1)>p").innerText="Capture every task you work on. Take control over time intervals by simple time tracking"
+    function tt(){
+        document.querySelector("#s2>div>img").src="https://tmetric.com/media/e5enfaae/img-advantages.png"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(1)>p").innerText="Capture every task you work on. Take control over time intervals by simple time tracking"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(1)>a").innerText="Learn More"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(1)>p").style.display=""
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(1)>a").style.display=""
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(1)").setAttribute("id","blue")
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(1)>a").setAttribute("id","ba")
+
+        // Children
+        x=document.querySelector("#s2>div:nth-child(2)>ul").children
+        for(i=0;i<x.length;i++){
+        
+            if(i!==0){
+        x[i].setAttribute("id","grey")
+        y=x[i].children
+          
+          
+          for(j=0;j<y.length;j++){
+            // console.log(y[j])
+            if(y[j].tagName=="P"||y[j].tagName=="A"){
+                y[j].style.display="none"
+            }
+    
+            
+         }}} }
+
+    function pm(){
+        document.querySelector("#s2>div>img").src="https://tmetric.com/media/d2dhexfq/img-advantages-project-management.png"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(2)>p").style.display=""
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(2)>a").style.display=""
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(2)>p").innerText="Create projects, set rates and budgets. Keep tracking of hours spent on tasks and see the project progress at a glance, collaborate easily, keep deadlines and prevent over budgeting"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(2)>a").innerText="Learn More"
+       
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(2)").setAttribute("id","blue")
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(2)>a").setAttribute("id","ba")
+
+        // Children
+        x=document.querySelector("#s2>div:nth-child(2)>ul").children
+        for(i=0;i<x.length;i++){
+        
+            if(i!==1){
+        x[i].setAttribute("id","grey")
+        y=x[i].children
+          
+          
+          for(j=0;j<y.length;j++){
+            // console.log(y[j])
+            if(y[j].tagName=="P"||y[j].tagName=="A"){
+                y[j].style.display="none"
+            }
+    
+            
+         }}} }
+         function tm(){
+        document.querySelector("#s2>div>img").src="https://tmetric.com/media/b3abexjt/img-advantages-team-management.png"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(3)>p").style.display=""
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(3)>a").style.display=""
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(3)>p").innerText="Measure productivity and activity level of your team, assign tasks in a click, monitor workflow and distribute the workload. Syncs your teams’ work and improves efficiency."
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(3)>a").innerText="Learn More"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(3)").setAttribute("id","blue")
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(3)>a").setAttribute("id","ba")
+
+        // Children
+        x=document.querySelector("#s2>div:nth-child(2)>ul").children
+        for(i=0;i<x.length;i++){
+        
+            if(i!==2){
+        x[i].setAttribute("id","grey")
+        y=x[i].children
+          
+          
+          for(j=0;j<y.length;j++){
+            // console.log(y[j])
+            if(y[j].tagName=="P"||y[j].tagName=="A"){
+                y[j].style.display="none"
+            }
+    
+            
+         }}} }
+
+         function bi(){
+        document.querySelector("#s2>div>img").src="https://tmetric.com/media/nmmhl5l3/img-advantages-invoice.png"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(4)>p").style.display=""
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(4)>a").style.display=""
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(4)>p").innerText="With the accurate billing system, set billable rates and easily create an invoice based on tracked time and expenses, and get paid promptly."
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(4)>a").innerText="Learn More"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(4)").setAttribute("id","blue")
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(4)>a").setAttribute("id","ba")
+
+        // Children
+        x=document.querySelector("#s2>div:nth-child(2)>ul").children
+        for(i=0;i<x.length;i++){
+        
+            if(i!==3){
+        x[i].setAttribute("id","grey")
+        y=x[i].children
+          
+          
+          for(j=0;j<y.length;j++){
+            // console.log(y[j])
+            if(y[j].tagName=="P"||y[j].tagName=="A"){
+                y[j].style.display="none"
+            }
+    
+            
+         }}} }
+         function rp(){
+            document.querySelector("#s2>div>img").src="https://tmetric.com/media/bpli5hts/img-advantages-reporting.png"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(5)>p").style.display=""
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(5)>a").style.display=""
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(5)>p").innerText="With a flexible reporting system, you have a choice to get insights into your projects and team productivity, analyze incomes and keep costs under control"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(5)>a").innerText="Learn More"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(5)").setAttribute("id","blue")
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(5)>a").setAttribute("id","ba")
+
+        // Children
+        x=document.querySelector("#s2>div:nth-child(2)>ul").children
+        for(i=0;i<x.length;i++){
+        
+            if(i!==4){
+        x[i].setAttribute("id","grey")
+        y=x[i].children
+          
+          
+          for(j=0;j<y.length;j++){
+            // console.log(y[j])
+            if(y[j].tagName=="P"||y[j].tagName=="A"){
+                y[j].style.display="none"
+            }
+    
+            
+         }}} }
+         function to(){
+    document.querySelector("#s2>div>img").src="https://tmetric.com/media/kuqjgrfl/img-advantages-time-off.png"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(6)>p").style.display=""
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(6)>a").style.display=""
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(6)>p").innerText="Add a PTO policy for your organization, simply ask for days off, control missed workdays, manage balances and teams attendance hassle-free"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(6)>a").innerText="Learn More"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(6)").setAttribute("id","blue")
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(6)>a").setAttribute("id","ba")
+
+        // Children
+        x=document.querySelector("#s2>div:nth-child(2)>ul").children
+        for(i=0;i<x.length;i++){
+        
+            if(i!==5){
+        x[i].setAttribute("id","grey")
+        y=x[i].children
+          
+          
+          for(j=0;j<y.length;j++){
+            // console.log(y[j])
+            if(y[j].tagName=="P"||y[j].tagName=="A"){
+                y[j].style.display="none"
+            }
+    
+            
+         }}} }
+         
+         
+// why track time
+function one(){
+    document.querySelector("#s7>div>p").innerText="We ultimately went with TMetric because it checked a lot of items on our want list. It’s both a desktop and web app, and has an API that we were able to integrate with our business management software. While that was the biggest selling point, we also really like the user interface, the Chrome extension, and built-in integration with Jira."
+    document.querySelector("#s7>div>span").innerText="BizStream team"
+    document.querySelector("#s7>div:nth-child(2)>img").src="https://tmetric.com/media/hznb1sgs/photo-software-developers.png"
+}
+function two(){
+    
+    document.querySelector("#s7>div>p").innerText="We’ve found TMetric to be both user friendly and robust. It was easy to setup which allowed us to begin leveraging the tool immediately. It also provides multiple layers of reporting which provides value to our organization on a number of different levels."
+    document.querySelector("#s7>div>span").innerText="Brian Reilly, BankBound"
+    document.querySelector("#s7>div:nth-child(2)>img").src="https://tmetric.com/media/dhbotvr1/photo-marketers.png"
+
+}
+function thr(){
+    document.querySelector("#s7>div>p").innerText="TMetric is faster, more convenient and cheaper, the support is responsive and they fixed some bugs quickly."
+    document.querySelector("#s7>div>span").innerText="Swen Roethlisberger, Floowedit"
+    document.querySelector("#s7>div:nth-child(2)>img").src="https://tmetric.com/media/bxyho4oy/photo-designers.png"
+}
+function fou(){
+    document.querySelector("#s7>div>p").innerText="I recently transitioned from full-time employee to ‘consultant’. Needed an app to track projects, tasks and generate billing based on our agreement. TMetric handles this elegantly and I can access from my iPhone, iPad or PC- awesome!"
+    document.querySelector("#s7>div>span").innerText="Jim Rolph, Manufacturer's Representative at Gorman Company"
+    document.querySelector("#s7>div:nth-child(2)>img").src="https://tmetric.com/media/2pdfttnr/photo-contractors.png"
+}
+function fiv(){
+    document.querySelector("#s7>div>p").innerText="After five months we are very happy with the app and will gladly renew the service. We are still finding new uses for it within our organization and it’s been pivotal for helping us gather better decision-making information, grow our topline and reduce our bottomline."
+    document.querySelector("#s7>div>span").innerText="Galeno Chua, The Idea Founding Principal"
+    document.querySelector("#s7>div:nth-child(2)>img").src="	https://tmetric.com/media/ipkhp5ts/photo-consulting.png"
+
+}
+function six(){
+    document.querySelector("#s7>div>p").innerText="There are plenty of available applications to monitor working time. We chose TMetric because of the suitable price and compatibility with Trello and Google Documents, which we use every day in our company."
+    document.querySelector("#s7>div>span").innerText="Patryk Hoffmann, MyLead"
+    document.querySelector("#s7>div:nth-child(2)>img").src="	https://tmetric.com/media/1nlgnvyj/photo-freelance.png"
+}
+</script>
