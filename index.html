@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"></script>
+    <style>
+        #fy{
+            background-color: rgb(255,240,184);
+
+        }
+
+        #navbar{
+            /* border: 1px solid red; */
+            width:80%;
+            background-color: rgb(255,240,184);
+            display: flex;
+            align-items: center;
+            margin:auto
+        }
+        /* Navbar Image */
+        #navbar>a>img{
+            width: 80px;
+            margin-left: 1%;
+            margin-top: 0%;
+        }
+        /* Navbar button */
+        #navbar>div{
+            margin-left: 1%;
+        }
+        #navbar>div>button{
+            cursor:pointer;
+            padding:5px 10px 5px 10px;
+            background-color: rgb(255,240,184);
+            font-weight: bold;
+            border-radius: 4px;
+            border:2px solid rgba(128, 128, 128, 0.551);
+        }
+        /* Center */
+        #navbar>ul{
+            /* border: 1px solid green; */
+        overflow:hidden;
+        margin:auto;
+        /* margin-left:5%; */
+        width: 50%;
+        padding-right: -30%;
+        justify-content: flex-end;
+        text-align: center;
+        }
+        #navbar ul li{
+        display:inline-block;
+      
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        font-size: 100%;
+    /* from website */
+        line-height: 1.5;
+        font-family: PTRootUIMedium,sans-serif;
+        color: #212529;
+        font-weight: 500;
+            }
+        #navbar>ul li:nth-child(1):after,#navbar>ul li:nth-child(2):after {
+        content: "\2304";
+        color: #212529;  
+        font-weight: bold;
+        transition: all .3s ease;
+        text-decoration: none;
+        background-color: transparent;
+        /* border: 1px solid green; */
+        /* display: inline-block; */
+        /* width: 30%; */
+        margin-bottom: 200%;
+        padding-bottom: 30%;
+        }
+
+        #navbar>a:nth-child(4){
+            color: #212529;
+            font-family: PTRootUIBold,sans-serif;
+            font-weight: 700;
+             
+
+        }
+        #navbar>a:nth-child(5){
+            color: #3070f0;
+            margin-right: 2%;
+            margin-left: 2%;
+            border: 2px solid #3070f0;
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-family: PTRootUIBold,sans-serif;
+            font-weight: 700;
+        }
+        #navbar>ul>li>a{
+            text-decoration: none;
+            color: black;
+
+        }
+        #ad{
+            padding-top: 20px;
+        }
+        #ad>ul{
+            margin:auto;
+            text-align: center;
+        }
+        #ad>ul>li{
+            display: inline-block;
+        }
+        /* Award */
+        /* top container */
+        /* First Div */
+        #topcontainer{
+            /* border:1px solid red; */
+            width:80%;
+            margin:auto;
+            justify-content: center;
+            display: flex;
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            background-color: rgb(255,240,184);
+        }
+        #topcontainer>div:nth-child(1){
+            /* border:1px solid red; */
+            width:45%;
+        }
+        #topcontainer>div:nth-child(2){
+            /* border:1px solid red; */
+            width:45%;
+        }
+        #topcontainer>div>h1{
+            width: 70%;
+            margin: 0 0 2.1rem;
+        font: bold 3.75rem/1.066 ObjectivityBold,sans-serif;
+        letter-spacing: -1px;
+       
+        
+        }
+        #topcontainer>div>p{
+            font: bold 1.25rem/1.4 PTRootUIBold,sans-serif;
+            
+        }
+        
+        #topcontainer>div>input{
+            /* position: relative; */
+            padding:1.5%;
+            padding-right: 25%;
+            margin-bottom: 5%;
+            margin-left: -0.5%;
+            border:1px solid rgba(128, 128, 128, 0.377)
+        
+       
+        }
+        #topcontainer>div>button{
+            background: #3070f0;
+            padding:2% 10% 2% 10%;
+            border: 0px solid red;
+            border-radius: 4px;
+            color: white;
+            font-family: PTRootUIMedium,sans-serif;
+        
+        }
+        /* font-mail */
+        #topcontainer>div>span:nth-child(3){
+            padding:1.25% 2% 1.4% 2%;
+            
+            
+            border:1px solid rgba(128, 128, 128, 0.377)
+        }
+        #topcontainer>div>span:nth-child(7){
+            padding-left: 20px;
+        
+        color: #4c5157;
+        line-height: 1.2;
+        }
+        #topcontainer>div:nth-child(2){
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+        /* height: 800px; */
+        
+        
+        }
+        #topcontainer>div:nth-child(2)>img{
+            width: 1000px;
+            /* margin-top: 50%; */
+        
+        
+        }
+      
+
+        /* Section 3 (Manage your Team) */
+        #s3f{
+            background-color:#f6f7f8
+        }
+        
+        #s3{
+            /* border: 1px solid red; */
+            width: 80%;
+            margin:auto;
+            display: flex;
+             padding-top: 2%;
+            padding-bottom: 2%;
+            /* margin-bottom: -2%;  */
+            justify-content: center;
+            align-items: flex-start;
+        }
+        #s3>div:nth-child(1){
+            /* border: 1px solid red; */
+            width: 40%;
+            
+            /* margin:auto; */
+        }
+        #s3>div:nth-child(1)>h1{
+            margin: 0 0 2rem;
+    font: bold 3rem/1.125 ObjectivityBold,sans-serif;
+            /* margin:auto; */
+        }
+        #s3>div:nth-child(1)>ul>li{
+            font-size: 1.25rem;
+            line-height: 1.4;
+            /* margin:auto; */
+            font-family: PTRootUIMedium,sans-serif;
+            color: #212529;
+            font-weight: 500;
+        }
+        #s3 button{
+            background: #3070f0;
+            padding:12px 18px 12px 18px;
+            /* border: 0px solid red; */
+            border-radius: 4px;
+            color: white;
+            margin-top:4%;
+            border:3px;
+            font-family: PTRootUIMedium,sans-serif;
+        
+        }
+        #s3>div:nth-child(2){
+            /* border: 1px solid red; */
+            width: 50%;
+            display: flex;
+            justify-content: flex-end; 
+             align-items: center;
+      
+            /* margin:auto; */
+        }
+        #s3>div:nth-child(2)>img{
+            width:800px;
+            
+            
+        }
+        /* Section 4 */
+        #s4f{
+            background-color:white
+        }
+        
+        #s4{
+            /* border: 1px solid red; */
+            width: 80%;
+            margin:auto;
+            display: flex;
+            padding-top: 2%;
+            padding-bottom: 2%;
+           
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        #s4>div:nth-child(2){
+            /* border: 1px solid red; */
+            width: 40%;
+            
+            /* margin:auto; */
+        }
+        #s4>div:nth-child(2)>h1{
+            margin: 0 0 2rem;
+    font: bold 3rem/1.125 ObjectivityBold,sans-serif;
+            /* margin:auto; */
+        }
+        #s4>div:nth-child(2)>ul>li{
+            font-size: 1.25rem;
+            line-height: 1.4;
+            font-family: PTRootUIMedium,sans-serif;
+            color: #212529;
+            font-weight: 500;
+            /* margin:auto; */
+        }
+        #s4 button{
+            background: #3070f0;
+            padding:12px 18px 12px 18px;
+            /* border: 0px solid red; */
+            border-radius: 4px;
+            color: white;
+            margin-top:4%;
+            border:3px;
+            font-family: PTRootUIMedium,sans-serif;
+        
+        }
+        #s4>div:nth-child(1){
+            /* border: 1px solid red; */
+            width: 50%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            /* for keeping image in the end */
+            /* margin-left: -5%; */
+           
+      
+            /* margin:auto; */
+        }
+        #s4>div:nth-child(1)>img{
+            width: 800px;
+            /* border: 1px solid red; */
+            
+            padding: -10%;
+            
+            
+        }
+        /* Section 6 Integration  */
+        #s6{
+            /* border:1px solid red; */
+            margin:auto;
+            text-align: center;
+            padding-top:90px;
+            padding-bottom:90px
+        }
+      
+        #s6>button{
+            background: #3070f0;
+            padding:12px 18px 12px 18px;
+            /* border: 0px solid red; */
+            border-radius: 4px;
+            color: white;
+            margin-top: 0px;
+            border:3px;
+            text-align: center;
+            font-family: PTRootUIMedium,sans-serif;
+        }
+        #s6>span{
+            margin-left: 20px;
+            color:#3070f0
+        }
+
+        #s6>span::after{
+            content: "\1F852";
+        }
+        #s6>ul{
+            /* width: 50%; */
+            margin:auto;
+            margin-top:40px
+        }
+        #s6>ul li{
+            display: inline-block;
+            /* display: block; */
+        
+    border: 1px solid #e2e7eb;
+    border-radius: 12px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    /* position: relative; */
+    background: #fff;
+    transition: all .5s ease;
+            /* width: 144px; */
+        }
+        #s6>ul li:hover{
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+        }
+        #s6>h2{
+            margin: 0 0 2rem;
+    font: bold 3rem/1.125 ObjectivityBold,sans-serif;
+
+        }
+        #s6>p{
+            margin-bottom: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    font-family: PTRootUIMedium,sans-serif;
+    color: #212529;
+    font-weight: 500;
+}
+        
+    /* Section 7(Why Track Time) */
+        #s7f{
+            text-align: center;
+            margin-top: 50px;
+        }
+    #s7{
+            display: flex;
+            
+            text-align: center;
+        }
+        #s7>div:nth-child(1){
+            margin:auto;
+            width:50%;
+            text-align:left;
+            align-items: flex-start;
+
+        }
+        #s7>div:nth-child(2){
+            margin:auto;
+           
+        }
+        #s7>div:nth-child(1)>hr{
+            
+            width:30%;
+            margin-right: 80%;
+            
+        }
+        #s7f>h3{
+            margin: 0 0 2rem;
+    font: bold 2.25rem/1.166 ObjectivityBold,sans-serif;
+    color: #292e33;
+}
+
+    #s7>div:nth-child(1)>p:nth-child(1){font-size: 1.25rem;
+    line-height: 1.4;
+    font-family: PTRootUIMedium,sans-serif;
+    color: #212529;
+    font-weight: 500;}
+        #s7>div:nth-child(1)>span:nth-child(3){
+    font: 700 1rem/1.5 PTRootUIBold,sans-serif;
+}
+#s7>div:nth-child(1)>a{
+                margin-bottom: 9px;
+    font: 700 1rem/1.5 PTRootUIBold,sans-serif;
+    color: #3070f0;
+    cursor: pointer;
+    margin-left:300px;
+    
+    
+}
+#s7f>div:nth-child(3)>a:hover{
+    color:black;
+    background-color: #e7edfc;;
+
+}
+#s7>div:nth-child(1)>a::after{
+    content: "\1F852";
+
+}
+
+#s7>div:nth-child(1)>img{
+    margin-top: 10px;
+}
+#s7>div:nth-child(2)>img{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+   
+}
+#s7f>div:nth-child(3){
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+}
+#s7f>div:nth-child(3)>a{
+    margin:auto;
+    cursor:pointer;
+    font: 500 1rem/1.5 PTRootUIBold,sans-serif;
+}
+/* Section 8 Read of Review */
+#s8{
+    background-color: rgb(255,240,184);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+#s8>h3{
+    margin: 0 0 2rem;
+    font: bold 2.25rem/1.166 ObjectivityBold,sans-serif;
+}
+#s8>p,#s8>a{
+    text-align: center;
+    font: 700 2.25rem/1.166 ObjectivityBold,sans-serif;
+}
+#s8>a{
+   color:#3070f0
+}
+/* Business trusted */
+#s9{
+   /* margin-top: 15px; */
+   padding-top:30px;
+   padding-bottom:30px;
+background-color:#f6f7f8 ;
+text-align:center
+
+}
+#s9>ul>li{
+    display:inline-block
+}
+#s9>h4{
+    margin: 0 0 1.65rem;
+    font: 500 1rem/1.5 PTRootUIMedium,sans-serif;
+}
+/* Section 10 (WHy choose Tmetric) */
+#s10{
+    /* display: flex; */
+    /* border: 1px solid red; */
+    text-align: center;
+    padding-bottom: 80px;
+}
+#s10>h2{
+    font: bold 3rem/1.125 ObjectivityBold,sans-serif;
+}
+#s10>div{
+    display: flex;
+    /* height: 70px; */
+    /* height: 150px; */
+    width:80%;
+    margin:auto
+
+}
+#s10>div>div{
+    height: 250px;
+    width:12%;
+    border-radius: 4px;
+    margin:auto;
+    border: 1px solid #e2e6eb;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 60px;
+    padding-top: 15px;
+}
+#s10>div>div>p{
+    font: 700 1.25rem/1.4 PTRootUIBold,sans-serif;
+}
+/* Section 11((Make it work for you) */
+#s11{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background-color:#41338f;
+    text-align:center;
+    color:white
+}
+#s11>h2{
+    margin: 0 0 2rem;
+    font: bold 3rem/1.125 ObjectivityBold,sans-serif;
+}
+
+#s11>div{
+    margin-top:10px ;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+    
+}
+#s11>div>p{
+    font: 500 1rem/1.5 PTRootUIMedium,sans-serif;
+}
+
+#s11>img{
+    margin-top: 100px;
+}
+#s11>button{
+    padding:10px 40px 10px 40px;
+    border-radius:4px;
+    border:0px solid white;
+    color:black;
+    font:700 1rem/1.5 PTRootUIBold,sans-serif;
+
+}
+ /* Section 2(What makes Tmetric) */
+ #s2f{
+    text-align: center;
+ }
+ #s2f>h2{
+    font: bold 3rem/1.125 ObjectivityBold,sans-serif;
+ }
+ #s2{
+        text-align: center;
+        display:flex;
+        justify-content: center;
+        /* border: 1px solid red; */
+        width: 80%;
+        margin: auto;
+       }
+#s2>div{
+    margin: auto;
+}
+
+#grey{
+    width: 300px;
+    list-style: none;
+    border-radius: 12px;
+    border: 1px solid #e2e7eb;
+    border-radius: 12px;
+    line-height: 1.5;
+    font-family: PTRootUIMedium,sans-serif;
+    color: #212529;
+    font-weight: 500;
+    text-align: left;
+    margin-top:20px
+}
+#grey>span{
+    font: 700 1.25rem/1.4 PTRootUIBold,sans-serif;
+}
+#blue{
+   
+border-color:#3070f0; ;
+background-color: #e7edfc;
+width: 300px;
+    list-style: none;
+    border-radius: 12px;
+    border-radius: 12px;
+    line-height: 1.5;
+    font-family: PTRootUIMedium,sans-serif;
+    color: #212529;
+    font-weight: 500;
+    text-align: left;
+    margin-top:20px
+}
+#ba{
+color:#3070f0;
+font-family:PTRootUIBold,sans-serif;
+}
+#ba::after{
+    content: "\1F852"; 
+}
+#ftf{
+    background-color: #ebedf0 ;
+}
+#ft{
+    width:50%;
+    /* border: 1px solid red; */
+    margin:auto;
+    margin-right: 25%;
+    /* margin-top: -50px; */
+    /* padding-top: -50px; */
+    /* text-align:center; */
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+}
+#ftf>img{
+    /* margin-top: 50px; */
+    margin-right: -500px;
+}
+#ft>ul{
+    text-align: left;
+    list-style: none;
+    
+
+}
+#ft>ul>li{
+    margin-top:10px;
+    
+
+}
+
+    /* width:10px */
+
+
+            
+
+        /* @media  all and (min-width:651px) and (max-width:1024px){
+        body{
+            /* background-color: green; */
+        
+    
+        /* @media all and (min-width:320px) and (max-width:650px){
+        body{
+            /* background-color: black;} */
+
+ 
+        
+       
+
+    </style>
+</head>
+<body>
+<div id="fy">
+    <div id="navbar">
+        
+        <a href="index.html"><img src="https://static.crozdesk.com/web_app_library/providers/logos/000/009/822/original/tmetric-1612456344-logo.png?1612456344"></a>
+        <div><button>EN</button></div>
+        <ul>
+            <li>Why TMetric</li>
+            <li>Apps & Integration</li>
+            <li >Pricing</li>
+            <li><a href="Support.html">Support</a></li>
+            <li>Blog</li>
+        </ul>
+        <a>Log In</a>
+        <a>Sign Up</a>
+            
+        </div>
+   
+   
+    <div id="topcontainer">
+        <div>
+            <h1>Make the best use of your time</h1>
+            <p>TMetric is a smart choice for time tracking to see work in progress and keep team, cost and quality under control</p>
+            <span><i class="fa-solid fa-envelope"></i></i></span>
+            <input placeholder="Enter your Email Address">
+            <br>
+            <button>Get Started
+
+            </button>
+            <span>Fully Functional 30-Day Trial</span>
+        </div>
+       <img src="https://tmetric.com/media/w53hmkzd/img-video-cover.png"
+    </div>
+</div>
+</div>
+<div id="ad">
+    <ul>
+        <li><img src="https://tmetric.com/media/zlalggkp/saasworthy_2021_main_page.png"></li>
+        <li><img src="https://tmetric.com/media/w4mhgaul/time-tracking-software.png"></li>
+        <li><img src="https://tmetric.com/media/mg3fi1e4/crozdesk_2022_main_page.png"></li>
+        <li><img src="https://tmetric.com/media/c2eewysw/g2_2022_main_page.png"></li>
+        <li><img src="	https://tmetric.com/media/a00doqsb/icon-customer-rating.png"></li>
+        <li><img src="https://tmetric.com/media/0mxfl3xw/icon-customer-choice.png"></li>
+        <li><img src="https://tmetric.com/media/jfxavlps/getapp-logotype.svg"></li>
+    </ul>
+</div>
+<hr >
+<div id="s2f">
+    <h2>What makes Tmetric your best business companion</h2>
+
+<div id="s2">
+    
+<!-- What makes Tmetric your best Business Companion -->
+<div>
+<img src="https://tmetric.com/media/e5enfaae/img-advantages.png">
+</div>
+<div>
+    <ul>
+        <li id="grey"  onclick="tt()">
+            <img src="https://tmetric.com/media/2p4n4oyc/icon-timer-blue.svg">
+            <span>Time Tracking</span>
+            <p></p>
+            <a></a>
+        </li>
+        <li id="grey"  onclick="pm()">
+            <img src="https://tmetric.com/media/1niddz51/icon-project-blue.svg">
+            <span> Project Management</span>
+            <p></p>
+            <a></a>
+
+        </li>
+        <li id="grey" onclick="tm()">
+            <img src="	https://tmetric.com/media/2gxihhdu/icon-team-blue.svg">
+            <span>Team Management</span>
+            <p></p>
+            <a></a>
+        </li>
+        <li id="grey" onclick="bi()">
+            <img src="https://tmetric.com/media/s4koycnp/icon-invoice-blue.svg">
+            <span>Blling & invoicing</span>
+            <p></p>
+            <a></a>
+        </li>
+        <li id="grey" onclick="rp()">
+            <img src="https://tmetric.com/media/yoblhiut/icon-reports-blue.svg">
+            <span>Reporting</span>
+            <p></p>
+            <a></a>
+        </li>
+        <li id="grey" onclick="to()">
+            <img src="https://tmetric.com/media/cajpa4uy/icon-time-off-blue.svg">
+            <span>Time Off</span>
+            <p></p>
+            <a></a>
+        </li>
+    </ul>
+</div>
+</div> 
+</div>
+<div id="s3f">
+  <div id="s3">
+       
+    <div>
+        <h1>Manage your team <br>effectively</h1>
+        <ul>
+    <li>timekeeping</li>
+    <li>sites and apps monitoring</li>
+    <li>activity tracking</li>
+    <li>screenshots capturing</li>
+    <li>task management</li>
+    <li>50+ integrations</li>
+    <li>work schedule</li>
+</ul>
+<button>Start Free Trial</button>
+</div>
+
+<div>
+    <img src="https://tmetric.com/media/upkh02nn/img-activity-cases.svg"> 
+</div>
+    </div>
+</div>
+<div id="s4f">
+    <div id="s4">
+        <div>
+            <img src="https://tmetric.com/media/hx0j4hno/img-report-cases-svg.svg"> 
+        </div>
+      <div>
+          <h1>Ensure the profitability of your business</h1>
+          <ul>
+      <li>timekeeping</li>
+      <li>sites and apps monitoring</li>
+      <li>activity tracking</li>
+      <li>screenshots capturing</li>
+      <li>task management</li>
+      <li>50+ integrations</li>
+      <li>work schedule</li>
+  </ul>
+  <button>Start Free Trial</button>
+  </div>
+  
+ 
+      </div>
+  </div>
+  <div id="s3f">
+    <div id="s3">
+         
+      <div>
+          <h1>Monitor attendance and time-off requests</h1>
+          <ul>
+      <li>flexible time off policy</li>
+      <li>time off requests management</li>
+      <li>time off calendar</li>
+      <li>pto calculations</li>
+      
+  </ul>
+  <button>Start Free Trial</button>
+  </div>
+  
+  <div>
+      <img src="https://tmetric.com/media/0sapzfi1/time-off-calendar-case.png"> 
+  </div>
+      </div>
+  </div>
+  <div id="s6">
+    <h2>Integration with 50+ popular services</h2>
+    <p>Tmetric integrates with dozens of services, which
+        lets you measure progress and activity in any tool you use.
+    </p>
+    <button>Start Free Trial</button>
+    <span> Explore All Integrations</span>
+    <ul>
+        <li>
+            <img src="https://tmetric.com/media/cshbmvwf/logo-integration-gsuite.svg">
+        </li>
+        <li>
+            <img src="https://tmetric.com/media/fnbggshs/logo-integration-msoffice.svg">
+        </li>
+        <li>
+            <img src="	https://tmetric.com/media/plvb1mg0/logo-integration-gkeep.svg">
+        </li>
+        <li>
+            <img src="	https://tmetric.com/media/smflyk5w/logo-integration-github.svg">
+        </li>
+        <li>
+            <img src="	https://tmetric.com/media/kbrcntmi/logo-integration-excel.svg">
+        </li>
+        <li>
+            <img src="https://tmetric.com/media/4aeci1fh/logo-integration-asana.svg">
+        </li>
+        <li>
+            <img src="	https://tmetric.com/media/caxbzjss/logo-integration-jira.svg">
+        </li>
+        <li>
+            <img src="	https://tmetric.com/media/dw2nwjwv/logo-integration-gitlab.svg">
+        
+        </li>
+        <br>
+        <br>
+        <li>
+            <img src="https://tmetric.com/media/me5ih5eu/logo-integration-gdocs.svg">
+        </li>
+        <li>
+            <img src="	https://tmetric.com/media/0bzmfrlf/logo-integration-trello.svg">
+        </li>
+        <li>
+            <img src="	https://tmetric.com/media/sdaj41fi/logo-integration-redmine.svg ">
+        </li>
+        <li>
+            <img src="https://tmetric.com/media/1xedbfav/logo-integration-zendesk.svg">
+        </li>
+        <li>
+            <img src="	https://tmetric.com/media/n3dmgi1p/logo-integration-wrike.svg">
+        </li>
+    </ul>
+</div>
+<hr>
+<!--  -->
+<div id="s7f">
+    <h3>Why track time with Tmetric</h3>
+<div id="s7">
+   
+    <div>
+        <p>
+            We ultimately went with TMetric because it checked a lot of items on our want list. It’s both a desktop and web app, and has an API that we were able to integrate with our business management software. While that was the biggest selling point, we also really like the user interface, the Chrome extension, and built-in integration with Jira.
+        </p>
+        <hr>
+        <span>BizStream team </span>
+        <a>Read Full Story </a><br>
+        <img src="	https://tmetric.com/media/j2klt5pd/img-rating-5.svg"></p>
+    </div>
+    <div>
+        <img src="	https://tmetric.com/media/hznb1sgs/photo-software-developers.png">
+    </div>
+   
+
+</div>
+<div>
+    <hr>
+    <a onclick="one()">Software developers</a>
+    <a onclick="two()">Marketers</a>
+    <a onclick="thr()">Designers</a>
+    <a onclick="fou()">Contractors</a>
+    <a onclick="fiv()">Consultants</a>
+    <a onclick="six()">Freelancers</a>
+</div>
+</div>
+<div id="s8">
+    <h3>Read Hundred of Reviews</h3>
+    <img src="https://tmetric.com/media/rt1k0zjc/img-rating-4-5.svg">
+    <p>4.5 Customer Rating</p>
+    <a>242 Reviews</a>
+</div>
+<div id="s9">
+    <h4>Used and trusted by 3000+ businesses in the world</h4>
+    <ul>
+        <li><img src="	https://tmetric.com/media/wlmpffzm/logo_business_endygo.png"></li>
+        <li><img src="	https://tmetric.com/media/0ddgehbk/logo_business_itsyndicate.png"></li>
+        <li><img src="https://tmetric.com/media/eozchehq/logo_business_pulso.png"></li>
+        <li><img src="https://tmetric.com/media/rmvok0xh/logo_business_050media.png"></li>
+        <li><img src="https://tmetric.com/media/ccpn231z/logo-business-jot-digi-tal.svg"></li>
+        <li><img src="	https://tmetric.com/media/z0fhmi1j/logo-business-freshlab.svg"></li>
+        <li><img src="	https://tmetric.com/media/xjogm2h2/logo-business-mvad.svg"></li>
+        <li><img src="	https://tmetric.com/media/nvalaok1/logo_business_swaven.png"></li>
+
+    </ul>
+</div>
+<div id="s10">
+    <h2>Why choose Tmetric?</h2>
+    <div id="container">
+      <div>
+        <img src="https://tmetric.com/media/zrvmvbl3/icon-straightforward.svg
+        ">
+        <p>The most straightforward time tracking app</p>
+      </div>
+      <div>
+        <img src="https://tmetric.com/media/opdfdo3l/icon-platforms.svg ">
+        <p>Available on all platforms: macOS, Windows, Linux, iOS, and Android</p>
+      </div>
+      <div>
+        <img src="https://tmetric.com/media/igkmpmix/icon-freetrial.svg">
+        <p>Free plan with basic time tracking for a team up to 5</p>
+      </div>
+      <div>
+        <img src="https://tmetric.com/media/htxfmpoe/icon-reasonableprice.svg">
+        <p>Reasonable price makes it affordable for anyone</p>
+      </div>
+      <div>
+        <img src="https://tmetric.com/media/0uyowzzu/icon-multilang.svg">
+        <p>Multilanguage solution</p>
+      </div>
+    </div>
+</div>
+<div id="s11">
+    <h2>Make time work for you!</h2>
+    <button>Start Free Trial</button>
+    <br>
+    
+   <div>
+        <p>Powered by</p>    
+         <img src="https://tmetric.com/media/pvgfkry5/logo-devart-small-white.svg">
+        <p>A software vendor with 20 years of experience</p>
+        </div>
+</div>
+<div id="ftf">
+    
+
+    <div id="ft">
+        <img src="https://tmetric.com/images/tmetric_logo_with_text.svg">
+        <ul>
+        <h4>Applications</h4>
+        <li><i class="fa-sharp fa-solid fa-desktop"></i> Desktop</li>
+        <li><i class="fa-brands fa-apple"></i> iOS</li>
+        <li><i class="fa-brands fa-android"></i> Android</li>
+        </ul>
+        <ul>
+        <h4>Browser</h4>
+        <li><i class="fa-brands fa-chrome"></i>   Chrome</li>
+        <li><i class="fa-brands fa-firefox-browser"></i> Firefox</li>
+        <li><i class="fa-brands fa-opera"></i> Opera</li>
+        <li><i class="fa-brands fa-edge"></i> Edge</li>
+        <li><i class="fa-brands fa-safari"></i> Safari</li>
+        </ul>
+        <ul>
+            <h4>Resources</h4>
+            <li>Solutions</li>
+            <li>Integrations</li>
+            <li>Help</li>
+            <li>Time Trackers<br>Comparison</li>
+            <li>Blog</li>
+        </ul>
+        <ul>
+            <h4>About</h4>
+            <li>About Tmetric</li>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>Cookies Policy</li>
+        </ul>
+        
+    </div>
+    <hr>
+        <p>Copyright © Devart 2022</p>
+    </div>
+</body>
+
+</html>
+<script>
+// What makes Tmetric your best
+    document.querySelector("#s2")
+//    document.querySelector("#s2>div:nth-child(3)>ul>li:nth-child(1)>p").innerText="Capture every task you work on. Take control over time intervals by simple time tracking"
+    function tt(){
+        document.querySelector("#s2>div>img").src="https://tmetric.com/media/e5enfaae/img-advantages.png"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(1)>p").innerText="Capture every task you work on. Take control over time intervals by simple time tracking"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(1)>a").innerText="Learn More"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(1)>p").style.display=""
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(1)>a").style.display=""
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(1)").setAttribute("id","blue")
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(1)>a").setAttribute("id","ba")
+
+        // Children
+        x=document.querySelector("#s2>div:nth-child(2)>ul").children
+        for(i=0;i<x.length;i++){
+        
+            if(i!==0){
+        x[i].setAttribute("id","grey")
+        y=x[i].children
+          
+          
+          for(j=0;j<y.length;j++){
+            // console.log(y[j])
+            if(y[j].tagName=="P"||y[j].tagName=="A"){
+                y[j].style.display="none"
+            }
+    
+            
+         }}} }
+
+    function pm(){
+        document.querySelector("#s2>div>img").src="https://tmetric.com/media/d2dhexfq/img-advantages-project-management.png"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(2)>p").style.display=""
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(2)>a").style.display=""
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(2)>p").innerText="Create projects, set rates and budgets. Keep tracking of hours spent on tasks and see the project progress at a glance, collaborate easily, keep deadlines and prevent over budgeting"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(2)>a").innerText="Learn More"
+       
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(2)").setAttribute("id","blue")
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(2)>a").setAttribute("id","ba")
+
+        // Children
+        x=document.querySelector("#s2>div:nth-child(2)>ul").children
+        for(i=0;i<x.length;i++){
+        
+            if(i!==1){
+        x[i].setAttribute("id","grey")
+        y=x[i].children
+          
+          
+          for(j=0;j<y.length;j++){
+            // console.log(y[j])
+            if(y[j].tagName=="P"||y[j].tagName=="A"){
+                y[j].style.display="none"
+            }
+    
+            
+         }}} }
+         function tm(){
+        document.querySelector("#s2>div>img").src="https://tmetric.com/media/b3abexjt/img-advantages-team-management.png"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(3)>p").style.display=""
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(3)>a").style.display=""
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(3)>p").innerText="Measure productivity and activity level of your team, assign tasks in a click, monitor workflow and distribute the workload. Syncs your teams’ work and improves efficiency."
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(3)>a").innerText="Learn More"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(3)").setAttribute("id","blue")
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(3)>a").setAttribute("id","ba")
+
+        // Children
+        x=document.querySelector("#s2>div:nth-child(2)>ul").children
+        for(i=0;i<x.length;i++){
+        
+            if(i!==2){
+        x[i].setAttribute("id","grey")
+        y=x[i].children
+          
+          
+          for(j=0;j<y.length;j++){
+            // console.log(y[j])
+            if(y[j].tagName=="P"||y[j].tagName=="A"){
+                y[j].style.display="none"
+            }
+    
+            
+         }}} }
+
+         function bi(){
+        document.querySelector("#s2>div>img").src="https://tmetric.com/media/nmmhl5l3/img-advantages-invoice.png"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(4)>p").style.display=""
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(4)>a").style.display=""
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(4)>p").innerText="With the accurate billing system, set billable rates and easily create an invoice based on tracked time and expenses, and get paid promptly."
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(4)>a").innerText="Learn More"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(4)").setAttribute("id","blue")
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(4)>a").setAttribute("id","ba")
+
+        // Children
+        x=document.querySelector("#s2>div:nth-child(2)>ul").children
+        for(i=0;i<x.length;i++){
+        
+            if(i!==3){
+        x[i].setAttribute("id","grey")
+        y=x[i].children
+          
+          
+          for(j=0;j<y.length;j++){
+            // console.log(y[j])
+            if(y[j].tagName=="P"||y[j].tagName=="A"){
+                y[j].style.display="none"
+            }
+    
+            
+         }}} }
+         function rp(){
+            document.querySelector("#s2>div>img").src="https://tmetric.com/media/bpli5hts/img-advantages-reporting.png"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(5)>p").style.display=""
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(5)>a").style.display=""
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(5)>p").innerText="With a flexible reporting system, you have a choice to get insights into your projects and team productivity, analyze incomes and keep costs under control"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(5)>a").innerText="Learn More"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(5)").setAttribute("id","blue")
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(5)>a").setAttribute("id","ba")
+
+        // Children
+        x=document.querySelector("#s2>div:nth-child(2)>ul").children
+        for(i=0;i<x.length;i++){
+        
+            if(i!==4){
+        x[i].setAttribute("id","grey")
+        y=x[i].children
+          
+          
+          for(j=0;j<y.length;j++){
+            // console.log(y[j])
+            if(y[j].tagName=="P"||y[j].tagName=="A"){
+                y[j].style.display="none"
+            }
+    
+            
+         }}} }
+         function to(){
+    document.querySelector("#s2>div>img").src="https://tmetric.com/media/kuqjgrfl/img-advantages-time-off.png"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(6)>p").style.display=""
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(6)>a").style.display=""
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(6)>p").innerText="Add a PTO policy for your organization, simply ask for days off, control missed workdays, manage balances and teams attendance hassle-free"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(6)>a").innerText="Learn More"
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(6)").setAttribute("id","blue")
+        document.querySelector("#s2>div:nth-child(2)>ul>li:nth-child(6)>a").setAttribute("id","ba")
+
+        // Children
+        x=document.querySelector("#s2>div:nth-child(2)>ul").children
+        for(i=0;i<x.length;i++){
+        
+            if(i!==5){
+        x[i].setAttribute("id","grey")
+        y=x[i].children
+          
+          
+          for(j=0;j<y.length;j++){
+            // console.log(y[j])
+            if(y[j].tagName=="P"||y[j].tagName=="A"){
+                y[j].style.display="none"
+            }
+    
+            
+         }}} }
+         
+         
+// why track time
+function one(){
+    document.querySelector("#s7>div>p").innerText="We ultimately went with TMetric because it checked a lot of items on our want list. It’s both a desktop and web app, and has an API that we were able to integrate with our business management software. While that was the biggest selling point, we also really like the user interface, the Chrome extension, and built-in integration with Jira."
+    document.querySelector("#s7>div>span").innerText="BizStream team"
+    document.querySelector("#s7>div:nth-child(2)>img").src="https://tmetric.com/media/hznb1sgs/photo-software-developers.png"
+}
+function two(){
+    
+    document.querySelector("#s7>div>p").innerText="We’ve found TMetric to be both user friendly and robust. It was easy to setup which allowed us to begin leveraging the tool immediately. It also provides multiple layers of reporting which provides value to our organization on a number of different levels."
+    document.querySelector("#s7>div>span").innerText="Brian Reilly, BankBound"
+    document.querySelector("#s7>div:nth-child(2)>img").src="https://tmetric.com/media/dhbotvr1/photo-marketers.png"
+
+}
+function thr(){
+    document.querySelector("#s7>div>p").innerText="TMetric is faster, more convenient and cheaper, the support is responsive and they fixed some bugs quickly."
+    document.querySelector("#s7>div>span").innerText="Swen Roethlisberger, Floowedit"
+    document.querySelector("#s7>div:nth-child(2)>img").src="https://tmetric.com/media/bxyho4oy/photo-designers.png"
+}
+function fou(){
+    document.querySelector("#s7>div>p").innerText="I recently transitioned from full-time employee to ‘consultant’. Needed an app to track projects, tasks and generate billing based on our agreement. TMetric handles this elegantly and I can access from my iPhone, iPad or PC- awesome!"
+    document.querySelector("#s7>div>span").innerText="Jim Rolph, Manufacturer's Representative at Gorman Company"
+    document.querySelector("#s7>div:nth-child(2)>img").src="https://tmetric.com/media/2pdfttnr/photo-contractors.png"
+}
+function fiv(){
+    document.querySelector("#s7>div>p").innerText="After five months we are very happy with the app and will gladly renew the service. We are still finding new uses for it within our organization and it’s been pivotal for helping us gather better decision-making information, grow our topline and reduce our bottomline."
+    document.querySelector("#s7>div>span").innerText="Galeno Chua, The Idea Founding Principal"
+    document.querySelector("#s7>div:nth-child(2)>img").src="	https://tmetric.com/media/ipkhp5ts/photo-consulting.png"
+
+}
+function six(){
+    document.querySelector("#s7>div>p").innerText="There are plenty of available applications to monitor working time. We chose TMetric because of the suitable price and compatibility with Trello and Google Documents, which we use every day in our company."
+    document.querySelector("#s7>div>span").innerText="Patryk Hoffmann, MyLead"
+    document.querySelector("#s7>div:nth-child(2)>img").src="	https://tmetric.com/media/1nlgnvyj/photo-freelance.png"
+}
+</script>
