@@ -8,6 +8,95 @@
     <script src="https://kit.fontawesome.com/24c494a6b6.js"
     crossorigin="anonymous"></script>
     <style>
+
+        #fy{
+            background-color:#fff2cc ;
+        }
+         #navbar{
+            /* border: 1px solid red; */
+            width:80%;
+            background-color: #fff2cc ;
+            display: flex;
+            align-items: center;
+            margin:auto
+        }
+        /* Navbar Image */
+        #navbar>a>img{
+            width: 80px;
+            margin-left: 1%;
+            margin-top: 0%;
+        }
+        /* Navbar button */
+        #navbar>div{
+            margin-left: 1%;
+        }
+        #navbar>div>button{
+            cursor:pointer;
+            padding:5px 10px 5px 10px;
+            background-color: #fff2cc ;
+            font-weight: bold;
+            border-radius: 4px;
+            border:2px solid rgba(128, 128, 128, 0.551);
+        }
+        /* Center */
+        #navbar>ul{
+            /* border: 1px solid green; */
+        overflow:hidden;
+        margin:auto;
+        /* margin-left:5%; */
+        width: 50%;
+        padding-right: -30%;
+        justify-content: flex-end;
+        text-align: center;
+        }
+        #navbar ul li{
+        display:inline-block;
+      
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        font-size: 100%;
+    /* from website */
+        line-height: 1.5;
+        font-family: PTRootUIMedium,sans-serif;
+        color: #212529;
+        font-weight: 500;
+            }
+        #navbar>ul li:nth-child(1):after,#navbar>ul li:nth-child(2):after {
+        content: "\2304";
+        color: #212529;  
+        font-weight: bold;
+        transition: all .3s ease;
+        text-decoration: none;
+        background-color: transparent;
+        /* border: 1px solid green; */
+        /* display: inline-block; */
+        /* width: 30%; */
+        margin-bottom: 200%;
+        padding-bottom: 30%;
+        }
+
+        #navbar>a:nth-child(4){
+            color: #212529;
+            font-family: PTRootUIBold,sans-serif;
+            font-weight: 700;
+             
+
+        }
+        #navbar>a:nth-child(5){
+            color: #3070f0;
+            margin-right: 2%;
+            margin-left: 2%;
+            border: 2px solid #3070f0;
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-family: PTRootUIBold,sans-serif;
+            font-weight: 700;
+        }
+        #navbar>ul>li>a{
+            text-decoration: none;
+            color: black;
+
+        }
         #top{
             text-align: center;
             background-color:#fff2cc ;
@@ -32,7 +121,7 @@
 #top>div>input{
     font:bold 1.25rem/1.4 PTRootUIBold,sans-serif;
     border: 1px solid #a1a7b2;
-    border-left: 0px solid red;
+    /* border-left: 0px solid red; */
     width: 50%;
     /* margin-top: -7px; */
 /* navbar */
@@ -84,7 +173,7 @@ text-align: center;
 
 #ug>ul{
     margin:auto;
-    border:1px solid red;
+    /* border:1px solid red; */
    padding-left: 20%;
     text-align: left;
 }
@@ -240,6 +329,22 @@ text-align: center;
     </style>
 </head>
 <body>
+<div id="fy">
+    <div id="navbar">
+        
+        <a href="index.html"><img src="https://static.crozdesk.com/web_app_library/providers/logos/000/009/822/original/tmetric-1612456344-logo.png?1612456344"></a>
+        <div><button>EN</button></div>
+        <ul>
+            <li>Why TMetric</li>
+            <li>Apps & Integration</li>
+            <li >Pricing</li>
+            <li><a href="Support.html">Support</a></li>
+            <li>Blog</li>
+        </ul>
+        <a>Log In</a>
+        <a>Sign Up</a>
+            
+        </div>
     <div id="top">
         <h1>How can we help you?</h1>
         <div>
@@ -249,6 +354,7 @@ text-align: center;
     </div>
     <br>
         </div>
+    
     <div id="qs">
         <h2>Quick Start Videos</h2>
         <ul>

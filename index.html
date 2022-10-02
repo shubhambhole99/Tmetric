@@ -8,7 +8,10 @@
     <script src="https://kit.fontawesome.com/24c494a6b6.js"
     crossorigin="anonymous"></script>
     <style>
+        #fy{
+            background-color: rgb(255,240,184);
 
+        }
 
         #navbar{
             /* border: 1px solid red; */
@@ -19,7 +22,7 @@
             margin:auto
         }
         /* Navbar Image */
-        #navbar>img{
+        #navbar>a>img{
             width: 80px;
             margin-left: 1%;
             margin-top: 0%;
@@ -90,6 +93,22 @@
             font-family: PTRootUIBold,sans-serif;
             font-weight: 700;
         }
+        #navbar>ul>li>a{
+            text-decoration: none;
+            color: black;
+
+        }
+        #ad{
+            padding-top: 20px;
+        }
+        #ad>ul{
+            margin:auto;
+            text-align: center;
+        }
+        #ad>ul>li{
+            display: inline-block;
+        }
+        /* Award */
         /* top container */
         /* First Div */
         #topcontainer{
@@ -599,6 +618,37 @@ font-family:PTRootUIBold,sans-serif;
 #ba::after{
     content: "\1F852"; 
 }
+#ftf{
+    background-color: #ebedf0 ;
+}
+#ft{
+    width:50%;
+    /* border: 1px solid red; */
+    margin:auto;
+    margin-right: 25%;
+    /* margin-top: -50px; */
+    /* padding-top: -50px; */
+    /* text-align:center; */
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+}
+#ftf>img{
+    /* margin-top: 50px; */
+    margin-right: -500px;
+}
+#ft>ul{
+    text-align: left;
+    list-style: none;
+    
+
+}
+#ft>ul>li{
+    margin-top:10px;
+    
+
+}
 
     /* width:10px */
 
@@ -621,21 +671,23 @@ font-family:PTRootUIBold,sans-serif;
     </style>
 </head>
 <body>
+<div id="fy">
     <div id="navbar">
         
-        <img src="https://static.crozdesk.com/web_app_library/providers/logos/000/009/822/original/tmetric-1612456344-logo.png?1612456344">
+        <a href="index.html"><img src="https://static.crozdesk.com/web_app_library/providers/logos/000/009/822/original/tmetric-1612456344-logo.png?1612456344"></a>
         <div><button>EN</button></div>
         <ul>
             <li>Why TMetric</li>
             <li>Apps & Integration</li>
-            <li>Pricing</li>
-            <li>Support</li>
+            <li >Pricing</li>
+            <li><a href="Support.html">Support</a></li>
             <li>Blog</li>
         </ul>
         <a>Log In</a>
         <a>Sign Up</a>
             
         </div>
+   
    
     <div id="topcontainer">
         <div>
@@ -652,6 +704,19 @@ font-family:PTRootUIBold,sans-serif;
        <img src="https://tmetric.com/media/w53hmkzd/img-video-cover.png"
     </div>
 </div>
+</div>
+<div id="ad">
+    <ul>
+        <li><img src="https://tmetric.com/media/zlalggkp/saasworthy_2021_main_page.png"></li>
+        <li><img src="https://tmetric.com/media/w4mhgaul/time-tracking-software.png"></li>
+        <li><img src="https://tmetric.com/media/mg3fi1e4/crozdesk_2022_main_page.png"></li>
+        <li><img src="https://tmetric.com/media/c2eewysw/g2_2022_main_page.png"></li>
+        <li><img src="	https://tmetric.com/media/a00doqsb/icon-customer-rating.png"></li>
+        <li><img src="https://tmetric.com/media/0mxfl3xw/icon-customer-choice.png"></li>
+        <li><img src="https://tmetric.com/media/jfxavlps/getapp-logotype.svg"></li>
+    </ul>
+</div>
+<hr >
 <div id="s2f">
     <h2>What makes Tmetric your best business companion</h2>
 
@@ -908,6 +973,45 @@ font-family:PTRootUIBold,sans-serif;
         <p>A software vendor with 20 years of experience</p>
         </div>
 </div>
+<div id="ftf">
+    
+
+    <div id="ft">
+        <img src="https://tmetric.com/images/tmetric_logo_with_text.svg">
+        <ul>
+        <h4>Applications</h4>
+        <li><i class="fa-sharp fa-solid fa-desktop"></i> Desktop</li>
+        <li><i class="fa-brands fa-apple"></i> iOS</li>
+        <li><i class="fa-brands fa-android"></i> Android</li>
+        </ul>
+        <ul>
+        <h4>Browser</h4>
+        <li><i class="fa-brands fa-chrome"></i>   Chrome</li>
+        <li><i class="fa-brands fa-firefox-browser"></i> Firefox</li>
+        <li><i class="fa-brands fa-opera"></i> Opera</li>
+        <li><i class="fa-brands fa-edge"></i> Edge</li>
+        <li><i class="fa-brands fa-safari"></i> Safari</li>
+        </ul>
+        <ul>
+            <h4>Resources</h4>
+            <li>Solutions</li>
+            <li>Integrations</li>
+            <li>Help</li>
+            <li>Time Trackers<br>Comparison</li>
+            <li>Blog</li>
+        </ul>
+        <ul>
+            <h4>About</h4>
+            <li>About Tmetric</li>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>Cookies Policy</li>
+        </ul>
+        
+    </div>
+    <hr>
+        <p>Copyright © Devart 2022</p>
+    </div>
 </body>
 
 </html>
