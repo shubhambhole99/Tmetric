@@ -1,5 +1,9 @@
 # Tmetric
 ## Productivity and project management online software for tracking cost, time and quality. Executed as a solo project.
+# Features
+- Login/Signup
+- Carousel
+- On-click sliders
 # Tech Stack
 - HTML
 - CSS
