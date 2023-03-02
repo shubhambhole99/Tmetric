@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  
+
+  </head>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins: wght@200; 400; 700&display=swap");
+    * {
+    padding: 0%;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+#fy{
+            background-color: rgb(255,240,184);
+
+        }
+        #navbar>ul>li>a{
+            text-decoration: none;
+            color: blue;
+
+        }
+
+        #navbar{
+            /* border: 1px solid red; */
+            width:80%;
+            background-color: rgb(255,240,184);
+            display: flex;
+            align-items: center;
+            margin:auto
+        }
+        /* Navbar Image */
+        #navbar>a>img{
+            width: 80px;
+            margin-left: 1%;
+            margin-top: 0%;
+        }
+        /* Navbar button */
+        #navbar>div{
+            margin-left: 1%;
+        }
+        #navbar>div>button{
+            cursor:pointer;
+            padding:5px 10px 5px 10px;
+            background-color: rgb(255,240,184);
+            font-weight: bold;
+            border-radius: 4px;
+            border:2px solid rgba(128, 128, 128, 0.551);
+        }
+        /* Center */
+        #navbar>ul{
+            /* border: 1px solid green; */
+        overflow:hidden;
+        margin:auto;
+        /* margin-left:5%; */
+        width: 50%;
+        padding-right: -30%;
+        justify-content: flex-end;
+        text-align: center;
+        }
+        #navbar ul li{
+        display:inline-block;
+      
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        font-size: 100%;
+    /* from website */
+        line-height: 1.5;
+        /* font-family: PTRootUIMedium,sans-serif; */
+        color: #212529;
+        font-weight: 500;
+            }
+        #navbar>ul li:nth-child(1):after,#navbar>ul li:nth-child(2):after {
+        content: "\2304";
+        color: #212529;  
+        font-weight: bold;
+        transition: all .3s ease;
+        text-decoration: none;
+        background-color: transparent;
+        /* border: 1px solid green; */
+        /* display: inline-block; */
+        /* width: 30%; */
+        margin-bottom: 200%;
+        padding-bottom: 30%;
+        }
+
+        #navbar>a:nth-child(4){
+            color: #212529;
+            font-family: PTRootUIBold,sans-serif;
+            font-weight: 700;
+             
+
+        }
+        #navbar>a:nth-child(5){
+            color: #3070f0;
+            margin-right: 2%;
+            margin-left: 2%;
+            border: 2px solid #3070f0;
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-family: PTRootUIBold,sans-serif;
+            font-weight: 700;
+        }
+
+#container{
+  display: flex;
+  margin: auto;
+  margin-top: 13%;
+  margin-left: 2%;
+}
+#register-form{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: auto;
+
+}
+#reg_form{
+  display: flex;
+  flex-direction: column;
+  /* width: 30%; */
+
+}
+#bl{
+  display: flex;
+  flex-direction: column; 
+}
+#login-form{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+  </style>
+
+  <body>
+    
+  <div id="fy">
+    <div id="navbar">
+        
+        <a href="index.html"><img src="https://static.crozdesk.com/web_app_library/providers/logos/000/009/822/original/tmetric-1612456344-logo.png?1612456344"></a>
+        <div><button>EN</button></div>
+        <ul>
+            <li>Why TMetric</li>
+            <li>Apps & Integration</li>
+            <li >Pricing</li>
+            <li><a href="Support.html">Support</a></li>
+            <li>Blog</li>
+        </ul>
+      
+            
+        </div>
+  </div>
+    <div id="container">
+      <div id="register-form">
+        <h1>Register</h1>
+        <form id="reg_form">
+          <input type="text" id="name" placeholder="Name" />
+          <input type="text" id="email" placeholder="Email" />
+          <input type="text" id="username" placeholder="Username" />
+
+          <input type="text" id="password" placeholder="Password" />
+          <input type="text" id="mobile" placeholder="Mobile" />
+          <input type="text" id="description" placeholder="Description" />
+        </form>
+
+        <button id='rg' >Register</button>
+      </div>
+
+      <div id="login-form">
+        <h1>Login</h1>
+        <form id="bl">
+          <input type="text" id="login-username" placeholder="Username" />
+
+          <input type="text" id="login-password" placeholder="Password" />
+        </form>
+
+        <button id='lg' >Login</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script type='module' src="auth.js"></script>
